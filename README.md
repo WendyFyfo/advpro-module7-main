@@ -25,7 +25,7 @@ The subscribers are another Rocket instances, so the notification will be sent u
 
 ## API Documentations
 
-#deleted
+You can download the Postman Collection JSON here: https://ristek.link/AdvProgWeek7Postman
 
 After you download the Postman Collection, you can try the endpoints inside "BambangShop Publisher" folder.
 This Postman collection also contains endpoints that you need to implement later on (the `Notification` feature).
@@ -50,8 +50,8 @@ You can install Postman via this website: https://www.postman.com/downloads/
 ## Mandatory Checklists (Publisher)
 -   [x] Clone https://gitlab.com/ichlaffterlalu/bambangshop to a new repository.
 -   **STAGE 1: Implement models and repositories**
-    -   [ ] Commit: `Create Subscriber model struct.`
-    -   [ ] Commit: `Create Notification model struct.`
+    -   [x] Commit: `Create Subscriber model struct.`
+    -   [x] Commit: `Create Notification model struct.`
     -   [ ] Commit: `Create Subscriber database and Subscriber repository struct skeleton.`
     -   [ ] Commit: `Implement add function in Subscriber repository.`
     -   [ ] Commit: `Implement list_all function in Subscriber repository.`

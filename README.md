@@ -86,4 +86,5 @@ This is the place for you to write reflections:
 
 2. Jika hanya menggunakan model, setiap model harus menangani akses data dan business logic, membuat kode lebih kompleks dan sulit dimaintain. Program, Subscriber, dan Notification akan saling berinteraksi langsung, menyebabkan banyak ketergantungan antar model. Perubahan pada satu model bisa berdampak ke model lain, meningkatkan risiko bug dan duplikasi kode. Dengan memisahkan Service dan Repository, interaksi antar model lebih rapi, sehingga kode lebih modular dan mudah dimaintain.
 
+3. Postman membantu saya menguji API yang saya buat. Dengan Postman, saya dapat mengirim request dengan mudah tanpa perlu membuat frontend.  Fitur seperti Collections memungkinkan saya menyimpan dan mengelola berbagai request API. Selain itu, fitur Automated Testing dan Mock Server juga menarik karena dapat membantu saya menguji respons API tanpa tergantung pada backend yang sudah sepenuhnya terimplementasi, yang berguna untuk tugas kelompok. 
 #### Reflection Publisher-3

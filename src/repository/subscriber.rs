@@ -17,8 +17,8 @@ impl SubscriberRepository {
         };
 
         SUBSCRIBERS.get(product_type).unwrap()
-            .insert(subscriber_value.url.clone(), subscriber_value);;
-        return subscriber;;
+            .insert(subscriber_value.url.clone(), subscriber_value);
+        return subscriber;
     }
 
     pub fn list_all(product_type: &str) -> Vec<Subscriber> {

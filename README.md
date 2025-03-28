@@ -69,7 +69,7 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement notify function in Notification service to notify each Subscriber.`
     -   [x] Commit: `Implement publish function in Program service and Program controller.`
     -   [x] Commit: `Edit Product service methods to call notify after create/delete.`
-    -   [x] Write answers of your learning module's "Reflection Publisher-3" questions in this README.
+    -   [ ] Write answers of your learning module's "Reflection Publisher-3" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -85,7 +85,5 @@ This is the place for you to write reflections:
 1. Memisahkan Service dan Repository dari Model mengikuti prinsip Separation of Concerns dan Single Responsibility Principle (SRP). Repository bertanggung jawab atas akses data, seperti mengambil dan menyimpan informasi ke database, sementara Service menangani business logic tanpa bergantung langsung pada cara data disimpan. Dengan tugas yang dipisah, perubahan pada penyimpanan data tidak memengaruhi business logic, dan sebaliknya business logic dapat diuji tanpa harus berurusan dengan database. Hal ini juga membuat kode lebih modular dan lebih mudah dimaintain.
 
 2. Jika hanya menggunakan model, setiap model harus menangani akses data dan business logic, membuat kode lebih kompleks dan sulit dimaintain. Program, Subscriber, dan Notification akan saling berinteraksi langsung, menyebabkan banyak ketergantungan antar model. Perubahan pada satu model bisa berdampak ke model lain, meningkatkan risiko bug dan duplikasi kode. Dengan memisahkan Service dan Repository, interaksi antar model lebih rapi, sehingga kode lebih modular dan mudah dimaintain.
-
-3. Postman membantu saya menguji API yang saya buat. Dengan Postman, saya dapat mengirim request dengan mudah tanpa perlu membuat frontend.  Fitur seperti Collections memungkinkan saya menyimpan dan mengelola berbagai request API. Selain itu, fitur Automated Testing dan Mock Server juga menarik karena dapat membantu saya menguji respons API tanpa tergantung pada backend yang sudah siap, yang berguna untuk tugas kelompok. 
 
 #### Reflection Publisher-3

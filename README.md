@@ -63,7 +63,7 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement subscribe function in Notification controller.`
     -   [x] Commit: `Implement unsubscribe function in Notification service.`
     -   [x] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
+    -   [x] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
     -   [x] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
     -   [x] Commit: `Implement notify function in Notification service to notify each Subscriber.`
@@ -82,5 +82,8 @@ This is the place for you to write reflections:
 3. DashMap juga lebih praktis dibandingkan pola Singleton karena langsung menangani thread-safety, sementara Singleton (misalnya dengan lazy_static) hanya memastikan satu instance tanpa menangani akses bersamaan. tetapi keduanya bisa digunakan bersama, contohnya Singleton mencegah instansiasi ganda, dan DashMap memastikan operasi tetap aman dalam multi-threading.
 
 #### Reflection Publisher-2
+1. Memisahkan Service dan Repository dari Model mengikuti prinsip Separation of Concerns dan Single Responsibility Principle (SRP). Repository bertanggung jawab atas akses data, seperti mengambil dan menyimpan informasi ke database, sementara Service menangani business logic tanpa bergantung langsung pada cara data disimpan. Dengan tugas yang dipisah, perubahan pada penyimpanan data tidak memengaruhi business logic, dan sebaliknya business logic dapat diuji tanpa harus berurusan dengan database. Hal ini juga membuat kode lebih modular dan lebih mudah dimaintain.
+
+2. Jika hanya menggunakan model, setiap model harus menangani akses data dan business logic, membuat kode lebih kompleks dan sulit dimaintain. Program, Subscriber, dan Notification akan saling berinteraksi langsung, menyebabkan banyak ketergantungan antar model. Perubahan pada satu model bisa berdampak ke model lain, meningkatkan risiko bug dan duplikasi kode. Dengan memisahkan Service dan Repository, interaksi antar model lebih rapi, sehingga kode lebih modular dan mudah dimaintain.
 
 #### Reflection Publisher-3

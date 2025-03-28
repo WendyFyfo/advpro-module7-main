@@ -56,7 +56,7 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement add function in Subscriber repository.`
     -   [x] Commit: `Implement list_all function in Subscriber repository.`
     -   [x] Commit: `Implement delete function in Subscriber repository.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-1" questions in this README.
+    -   [x] Write answers of your learning module's "Reflection Publisher-1" questions in this README.
 -   **STAGE 2: Implement services and controllers**
     -   [x] Commit: `Create Notification service struct skeleton.`
     -   [x] Commit: `Implement subscribe function in Notification service.`
@@ -77,8 +77,9 @@ This is the place for you to write reflections:
 ### Mandatory (Publisher) Reflections
 
 #### Reflection Publisher-1
-1. 
-
+1. Jika hanya ada satu jenis Subscriber, cukup menggunakan satu struct tanpa perlu trait, tetapi jika ada berbagai jenis subscriber dengan perilaku berbeda, maka trait tetap diperlukan agar lebih fleksibel dalam menerapkan pola Observer.
+2. Vec bisa digunakan jika jumlah subscriber kecil dan diakses dengan iterasi yang sederhana, tetapi kalau perlu pencarian cepat berdasarkan ID, DashMap lebih efisien karena memiliki waktu akses yang lebih cepat dibandingkan Vec.
+3. DashMap juga lebih praktis dibandingkan pola Singleton karena langsung menangani thread-safety, sementara Singleton (misalnya dengan lazy_static) hanya memastikan satu instance tanpa menangani akses bersamaan. tetapi keduanya bisa digunakan bersama, contohnya Singleton mencegah instansiasi ganda, dan DashMap memastikan operasi tetap aman dalam multi-threading.
 
 #### Reflection Publisher-2
 
